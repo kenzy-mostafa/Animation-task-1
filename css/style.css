@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcd78774;
+    font-family: 'Prompt', sans-serif;
+}
+
+.title {
+    width: 500px;
+    text-align: center;
+    margin: 30px auto;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #0090a1;
+    font-size: 20px;
+    border: 2px solid #ff8c4c;
+    border-radius: 5px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.cons
+{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.divs {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff8c4c;
+    border-radius: 50%;
+    background-color: #fcd78774;
+    color: #0090a1;
+    text-align: center;
+}
+
+.div1, .div3, .div5
+{
+    animation-name: change1;
+    animation-fill-mode: forwards;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.div2, .div4, .div6
+{
+    animation-name: change2;
+    animation-fill-mode: both;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.div1{
+    animation-delay: 1s;
+}
+
+.div2{
+    animation-delay: 5s;
+}
+
+.div3{
+    animation-delay: 9s;
+}
+
+.div4{
+    animation-delay: 13s;
+}
+
+.div5{
+    animation-delay: 17s;
+}
+
+.div6{
+    animation-delay: 21s;
+}
+
+.divs i {
+    line-height: 80px;
+    font-size: 40px;
+    margin: auto;
+}
+
+@keyframes  change1{
+    0%
+    {
+        left: 0;
+    }
+    100%
+    {
+        left: 94%;
+    }
+}
+
+@keyframes  change2{
+    0%
+    {
+        right: 0;
+    }
+    100%
+    {
+        right: 94%;
+    }
+}
+
+.under-divs {
+    /* position: relative; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-decoration: underline wavy;
+    text-underline-offset: 5px;
+    text-decoration-color: #ff8c4c;
+    /* margin: 8px 0 8px 0; */
+
+}
+
+.under-divs  h3{
+    line-height: 80px;
+    animation-name: text;
+    /* opacity: 0; */
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    color: #0090a1;
+
+}
+
+.under-div1  h3{
+    animation-delay: 3s;
+}
+
+.under-div2  h3{
+    animation-delay: 7s;
+}
+
+.under-div3  h3{
+    animation-delay: 11s;
+}
+
+.under-div4  h3{
+    animation-delay: 15s;
+}
+
+.under-div5  h3{
+    animation-delay: 19s;
+}
+
+.under-div6  h3{
+    animation-delay: 23s;
+}
+
+@keyframes  text{
+    0%
+    {
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+}
